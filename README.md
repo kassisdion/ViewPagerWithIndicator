@@ -2,12 +2,12 @@
 
 [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
-[![Release](https://jitpack.io/v/kassisdion/Android-animated-toolbar.svg)](https://jitpack.io/#kassisdion/ViewPagerWithIndicator
+[![Release](https://jitpack.io/v/kassisdion/ViewPagerWithIndicator.svg)](https://jitpack.io/#kassisdion/ViewPagerWithIndicator
 )
 
 ## What's ViewPagerwithIndicator ?
-A simple ViewPager indicator implementation compatible with the  from the Android Support Library.
-It can use arrows on the left and right and it can display a pageIndicator.
+A simple ViewPager indicator implementation compatible with the Android Support Library.
+It can use arrows on the left and on right and it can display a pageIndicator.
 
 ## Demo
 
@@ -36,7 +36,7 @@ Step 2. Add the dependency in the form
 
 ```gradle
 dependencies {
-  compile 'com.github.kassisdion:ViewPagerWithIndicator:v1.0.0'
+  compile 'com.github.kassisdion:ViewPagerWithIndicator:v1.0'
 }
 ```
 
@@ -44,19 +44,18 @@ dependencies {
 #### Step 1 : Define your viewPager under your xml (This should usually be placed adjacent to the viewPager) :
 
 ```java
- <com.kassisdion.library.ViewPagerWithIndicator
+    <com.kassisdion.library.ViewPagerWithIndicator
         app:arrow.enable="true"
         app:arrow.width="50dip"
         app:arrow.height="50dip"
         app:left_arrow.drawable="@drawable/ic_action_arrow_left"
         app:right_arrow.drawable="@drawable/ic_action_arrow_right"
         app:round.enable="true"
-        app:round.size="30dip"
+        app:round.size="15dip"
         app:round.drawable="@drawable/background_rounded"
         app:round.color.default="@android:color/white"
         app:round.color.selected="@android:color/holo_blue_light"
-
-        android:id="@+id/viewPagerIndicator"
+        android:id="@+id/viewPagerWithIndicator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -83,10 +82,10 @@ dependencies {
 ```
 
 ## Sample
-For a working implementation of this project see the sample/ folder.
+For a working implementation of this project see the app/ folder.
 
 ## Javadoc
-You can take a look at the [javadoc](https://jitpack.io/com/github/kassisdion/ViewPagerWithIndicator/v1.0.0/javadoc/)
+You can take a look at the [javadoc](https://jitpack.io/com/github/kassisdion/ViewPagerWithIndicator/v1.0/javadoc/)
 
 ## License
 See  LICENSE.txt
