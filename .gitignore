@@ -1,10 +1,15 @@
-### Intellij ###
-*.iml
+# [Android] ========================
+# Built application files
+*.apk
+*.ap_
 
-## Directory-based project format:
-.idea/
+# Files for the Dalvik VM
+*.dex
 
-### Android ###
+# Java class files
+*.class
+
+# Gradle files
 .gradle/
 build/
 /*/build/
@@ -12,9 +17,10 @@ build/
 # Local configuration file (sdk path, etc)
 local.properties
 
+## Directory-based project format:
+.idea/
 
-### Java ###
-*.class
-
-# Package Files #
-*.jar
+# Misc
+/.idea/workspace.xml
+/.idea/libraries
+**/*.iml
