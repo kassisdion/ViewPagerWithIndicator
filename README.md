@@ -10,7 +10,7 @@ A simple ViewPager indicator implementation compatible with the Android Support 
 It can use arrows on the left and on right and it can display a pageIndicator.
 
 ## Demo
-![demo](https://raw.githubusercontent.com/kassisdion/ViewPagerWithIndicator/1352b989151d8427e41850c432ed74e4cee5a1a7/doc/demo_gif.gif)
+![demo](https://github.com/kassisdion/ViewPagerWithIndicator/blob/master/doc/demo_gif.gif?raw=true)
 
 ## Feature
 * Can enable/desable Arrows
