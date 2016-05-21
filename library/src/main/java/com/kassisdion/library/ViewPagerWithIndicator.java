@@ -1,4 +1,4 @@
-package com.kassisdion.viewpagerwithindicator.lib;
+package com.kassisdion.library;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -7,29 +7,23 @@ import android.graphics.drawable.GradientDrawable;
 import android.support.annotation.NonNull;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-
-import com.kassisdion.viewpagerwithindicator.R;
-
-import org.w3c.dom.Text;
 
 public class ViewPagerWithIndicator extends LinearLayout {
 
     private final Boolean mArrowEnable;
     private int mArrowWidth;
     private int mArrowHeight;
-    private int mRightArrowDrawable = R.drawable.ic_action_arrow_right;
-    private int mLeftArrowDrawable = R.drawable.ic_action_arrow_left;
+    private int mRightArrowDrawable;
+    private int mLeftArrowDrawable;
 
     private final Boolean mRoundEnable;
     private int mRoundSize;
-    private int mRoundDrawable = R.drawable.background_rounded;
+    private int mRoundDrawable;
     private int mRoundDefaultColor;
     private int mRoundSelectedColor;
 
@@ -57,14 +51,14 @@ public class ViewPagerWithIndicator extends LinearLayout {
             if (mArrowEnable) {
                 mArrowWidth = a.getLayoutDimension(R.styleable.ViewPagerWithIndicator_arrow_width,  ViewGroup.LayoutParams.WRAP_CONTENT);
                 mArrowHeight = a.getLayoutDimension(R.styleable.ViewPagerWithIndicator_arrow_height, ViewGroup.LayoutParams.WRAP_CONTENT);
-                mRightArrowDrawable = a.getResourceId(R.styleable.ViewPagerWithIndicator_right_arrow_drawable,  R.drawable.ic_action_arrow_right);
-                mLeftArrowDrawable = a.getResourceId(R.styleable.ViewPagerWithIndicator_left_arrow_drawable,  R.drawable.ic_action_arrow_left);
+                mRightArrowDrawable = a.getResourceId(R.styleable.ViewPagerWithIndicator_right_arrow_drawable,  0);
+                mLeftArrowDrawable = a.getResourceId(R.styleable.ViewPagerWithIndicator_left_arrow_drawable,  0);
             }
 
             mRoundEnable = a.getBoolean(R.styleable.ViewPagerWithIndicator_round_enable, true);
             if (mRoundEnable) {
                 mRoundSize = a.getLayoutDimension(R.styleable.ViewPagerWithIndicator_round_size,  ViewGroup.LayoutParams.WRAP_CONTENT);
-                mRoundDrawable = a.getResourceId(R.styleable.ViewPagerWithIndicator_round_drawable,  R.drawable.background_rounded);
+                mRoundDrawable = a.getResourceId(R.styleable.ViewPagerWithIndicator_round_drawable,  0);
                 mRoundDefaultColor = a.getColor(R.styleable.ViewPagerWithIndicator_round_color_default, Color.TRANSPARENT);
                 mRoundSelectedColor = a.getColor(R.styleable.ViewPagerWithIndicator_round_color_selected, Color.BLUE);
             }
@@ -230,3 +224,4 @@ public class ViewPagerWithIndicator extends LinearLayout {
         return mViewPager.getCurrentItem() == 0;
     }
 }
+

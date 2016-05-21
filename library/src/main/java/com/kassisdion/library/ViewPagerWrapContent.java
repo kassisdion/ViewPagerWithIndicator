@@ -1,11 +1,11 @@
-package com.kassisdion.viewpagerwithindicator.lib;
+package com.kassisdion.library;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.View;
 
-public class ViewPagerWrapContent extends ViewPager{
+public class ViewPagerWrapContent extends ViewPager {
     /*
     ** Constructor
      */

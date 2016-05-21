@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ViewPagerWithIndicator">
+        <attr name="arrow.enable" format="boolean|reference"/>
+        <attr name="arrow.width" format="dimension|reference" />
+        <attr name="arrow.height" format="dimension|reference" />
+        <attr name="left_arrow.drawable" format="reference" />
+        <attr name="right_arrow.drawable" format="reference" />
+
+        <attr name="round.enable" format="boolean|reference"/>
+        <attr name="round.size" format="dimension|reference" />
+        <attr name="round.drawable" format="reference"/>
+        <attr name="round.color.default" format="color|reference"/>
+        <attr name="round.color.selected" format="color|reference"/>
+    </declare-styleable>
+
+
+</resources>

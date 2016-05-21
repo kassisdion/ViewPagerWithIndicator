@@ -12,8 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.kassisdion.library.ViewPagerWithIndicator;
 import com.kassisdion.viewpagerwithindicator.R;
-import com.kassisdion.viewpagerwithindicator.lib.ViewPagerWithIndicator;
 
 import java.util.Arrays;
 import java.util.List;

@@ -11,8 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".demo.MainActivity">
 
-
-    <com.kassisdion.viewpagerwithindicator.lib.ViewPagerWithIndicator
+    <com.kassisdion.library.ViewPagerWithIndicator
         app:arrow.enable="true"
         app:arrow.width="50dip"
         app:arrow.height="50dip"
@@ -27,12 +26,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.kassisdion.viewpagerwithindicator.lib.ViewPagerWrapContent
+        <com.kassisdion.library.ViewPagerWrapContent
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-
-    </com.kassisdion.viewpagerwithindicator.lib.ViewPagerWithIndicator>
+            android:layout_height="wrap_content" />
+    </com.kassisdion.library.ViewPagerWithIndicator>
 
 </LinearLayout>
